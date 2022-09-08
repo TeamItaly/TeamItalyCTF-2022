@@ -6,7 +6,7 @@ TeamItaly CTF 2022 is the first edition of the online Jeopardy-style Capture-The
 - [CTF Platform](https://ctf.teamitaly.eu/)
 
 <p float="left">
-  <a href="https://icc-games.com">
+  <a href="https://teamitaly.eu/">
   <img src="images/teamitaly-logo.png" width="256" />
   </a> <a href="https://cybersecnatlab.it">
   <img src="images/cybersecnatlab-logo.png" width="256" /> 
@@ -45,7 +45,6 @@ TeamItaly CTF 2022 is the first edition of the online Jeopardy-style Capture-The
 
 ### Full scoreboard
 
-- [Archived online scoreboard](https://web.archive.org/web/20220908153239/https://ctf.teamitaly.eu/scoreboard)
 - [Full scoreboard](images/scoreboard.png)
 - [Solves](images/solves.png)
 
