@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: archlinux
+    build: .
+    container_name: kreap
+    restart: always
+    ports:
+      - '15007:1377'

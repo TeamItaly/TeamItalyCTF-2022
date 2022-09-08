@@ -1,0 +1,39 @@
+{
+  "title": "Ik1VM - CrackmeEVA",
+  "description": "Your Truth Can Be Changed Simply By The Way You Accept It. That's How Fragile The Truth For A Human Is.\n\n`./emulator crackme_eva.ik1vm`\n\nSubmit the correct serial code.\n\ncrackme_eva.ik1vm sha1sum: `528e031510cecc45f0f97d6a7c20781c93f4fa6b`\n\nemulator sha1sum: `e5889fbc3dcb86020d742b87fd65ad6d9701dfca`\n\nAuthor: @ikiga1",
+  "authors": [
+    "Armando Bellante (ikiga1)"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "crackme_eva.ik1vm",
+      "type": "upload",
+      "path": "./attachments/crackme_eva.ik1vm"
+    },
+    {
+      "name": "emulator",
+      "type": "upload",
+      "path": "./attachments/emulator"
+    }
+  ],
+  "flags": [
+    "^flag\\{01910023239281138890310208238219\\}$"
+  ],
+  "checker": {
+    "enabled": false,
+    "config": {
+      "timeout": -1
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

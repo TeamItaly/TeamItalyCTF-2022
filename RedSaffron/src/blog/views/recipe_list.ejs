@@ -1,0 +1,20 @@
+<%- include('header') -%>
+
+
+<div class="row justify-content-center my-3">
+    <div class="col-lg-9 text-center">
+
+        <% if (recipes.length == 0){ %>
+        No recipe found...
+        <% } %>
+
+        <% for (const recipe of recipes) { %>
+        <a href="/<%= recipe.id %>"><%= recipe.title %></a>
+        </br>
+        <% } %>
+
+
+    </div>
+</div>
+
+<%- include('footer') -%>

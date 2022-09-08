@@ -1,0 +1,211 @@
+# This docker-compose require a traefik container on web network to expose http challenges
+version: '3'
+
+services:
+  # Chiabrando - nc lazy-platform.challs.teamitaly.eu 15004
+  lazy-platform:
+    build: ./LazyPlatform/src
+    ports:
+      - '15004:5555'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{u53_s3cure_r4nd0m_numb3r_gen3r4t0rs}
+
+  # Truong - nc gpocs.challs.teamitaly.eu 15004
+  gpocs:
+    build: ./GPOCS/src
+    ports:
+      - '15005:5555'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{c4n_1_us3_fd1sk_t0_p4rt1t10n_my_k3ys?}
+
+  # Petroni - nc alice-in-goland.challs.teamitaly.eu 15006
+  goland:
+    build: ./Goland/src
+    ports:
+      - '15006:6000'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{s0_h4v3_y0u_f0und_y0ur_w4y_0ut?}
+
+  # Dirutigliano - nc pizza-orders.challs.teamitaly.eu 15008
+  pizza_orders:
+    build: ./SafePizzaOrders/src
+    restart: unless-stopped
+    ports:
+      - '15008:5000'
+  #    environment:
+  #      - POW=6
+  #      - TIMEOUT_POW=60
+  #      - TIMEOUT_CHALL=120
+
+  # Del Gaudio - nc mmm.challs.teamitaly.eu 15009
+  m3:
+    build: ./MMM/src
+    restart: unless-stopped
+    ports:
+      - '15009:1337'
+
+  # Meinardi - nc atomic-pizza.challs.teamitaly.eu 15010
+  atomic_pizza:
+    build: ./AtomicPizza/src
+    restart: unless-stopped
+    ports:
+      - '15010:12321'
+
+  # Martino - nc familyrecipes.challs.teamitaly.eu 15011
+  familyrecipes:
+    build: ./FamilyRecipes/src
+    ports:
+      - '15011:1337'
+    restart: unless-stopped
+    volumes:
+      - ./FamilyRecipes/src/bzImage:/opt/bzImage
+      - ./FamilyRecipes/src/initramfs.cpio.gz:/opt/initramfs.cpio.gz
+      - ./FamilyRecipes/src/run.sh:/opt/run.sh
+      - ./FamilyRecipes/src/run.py:/opt/run.py
+
+  # Napolitano - nc imagestore.challs.teamitaly.eu 15000
+  imagestore:
+    build: ./ImageStore/src
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - '15000:5555'
+
+  # Napolitano - nc imagestore.challs.teamitaly.eu 15013
+  imagestore2:
+    build: ./ImageStore2/src
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - '15013:5555'
+
+  # Giotino - http://flag-proxy.challs.teamitaly.eu
+  flag-proxy-front:
+    build: ./FlagProxy/src/server-front
+    #ports:
+    #  - '15002:1337'
+    restart: unless-stopped
+    environment:
+      - BACK=flag-proxy-back
+      - AUTH=hxuing98ungheuitghn4837yhmz9mosur943
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=web'
+      - 'traefik.http.routers.teamitaly-flag-proxy.entrypoints=web'
+      - 'traefik.http.routers.teamitaly-flag-proxy.rule=Host(`flag-proxy.challs.teamitaly.eu`)'
+      - 'traefik.http.services.teamitaly-flag-proxy.loadbalancer.server.port=1337'
+    networks:
+      - web
+      - default
+
+  flag-proxy-back:
+    build: ./FlagProxy/src/server-back
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{sanity_check}
+
+  # Alberto - http://saffron.challs.teamitaly.eu
+  # Note: this challenge need a reverse proxy
+  saffron-blog:
+    build: ./RedSaffron/src/blog
+    environment:
+      - AUTH_HOST_INT=http://uauth.challs.teamitaly.eu
+      - AUTH_HOST_EXT=http://uauth.challs.teamitaly.eu
+      - BLOG_HOST=http://saffron.challs.teamitaly.eu
+      - BOT_URL=http://saffron-bot:9999/visit
+      - FLAG=flag{m0n3y_pr1n7er_g0__BRRRRRRRRR}
+    #ports:
+    #  - 15003:3001
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=web'
+      - 'traefik.http.routers.teamitaly-saffron-blog.entrypoints=web'
+      - 'traefik.http.routers.teamitaly-saffron-blog.rule=Host(`saffron.challs.teamitaly.eu`)'
+      - 'traefik.http.services.teamitaly-saffron-blog.loadbalancer.server.port=3001'
+    networks:
+      - web
+      - default
+
+  saffron-uauth:
+    build: ./RedSaffron/src/uauth
+    environment:
+      - ADMIN_PASSWORD=A9enrScoMkqxZzrbWZBVnQB2H
+    #ports:
+    #  - 3000:3000
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=web'
+      - 'traefik.http.routers.teamitaly-saffron-uauth.entrypoints=web'
+      - 'traefik.http.routers.teamitaly-saffron-uauth.rule=Host(`uauth.challs.teamitaly.eu`)'
+      - 'traefik.http.services.teamitaly-saffron-uauth.loadbalancer.server.port=3000'
+    networks:
+      - web
+      - default
+
+  saffron-bot:
+    build: ./RedSaffron/src/bot
+    environment:
+      - USERNAME=admin
+      - PASSWORD=A9enrScoMkqxZzrbWZBVnQB2H
+      - AUTH_URL=http://uauth.challs.teamitaly.eu/auth
+
+  # Di Pumpo - http://schei-checker.challs.teamitaly.eu
+  schei-redis:
+    image: redis:alpine
+    command: redis-server --include /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./ScheiChecker/src/redis.conf:/usr/local/etc/redis/redis.conf
+    restart: unless-stopped
+    networks:
+      - default
+
+  schei-pricescache:
+    build: ./ScheiChecker/src/prices-cache
+    volumes:
+      - ./ScheiChecker/src/prices-cache.config.js:/usr/app/config.js
+    command: node index.js
+    restart: unless-stopped
+    networks:
+      - default
+      - web
+
+  # Note: traefik requires --entryPoints.web.forwardedHeaders.insecure
+  schei-reverseproxy:
+    image: hpello/tcp-proxy
+    command: schei-backend 8080
+    ports:
+      - '15001:8080'
+    restart: unless-stopped
+    networks:
+      - default
+      - web
+
+  schei-backend:
+    build: ./ScheiChecker/src/backend
+    volumes:
+      - ./ScheiChecker/src/backend.config.js:/usr/app/config.js
+    restart: unless-stopped
+    command: node index.js
+    environment:
+      - ADMIN_PASSWORD=APAnUXXQxQ7KRRZ
+      - FLAG=flag{number_!1_f4n_0f_H77P_R3dis}
+    expose:
+      - '8080'
+    networks:
+      - default
+
+  # Demeio - nc elliptic-pizza.challs.teamitaly.eu 15012
+  elliptic-pizza:
+    build: ./EllipticPizza/src
+    ports:
+      - '15012:5555'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{1sog3ny_b4s3d_crypt0_w1ll_surv1v3!}
+
+networks:
+  web:
+    external: true

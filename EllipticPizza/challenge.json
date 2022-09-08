@@ -1,0 +1,34 @@
+{
+  "title": "Elliptic Pizza",
+  "description": "All italians have a secret key to order a special pizza at Sorbillo.\nIt's impossible to fool them, you can't even read their conversations...\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc elliptic-pizza.challs.teamitaly.eu 15012`\n\nAuthor: @Devrar",
+  "authors": [
+    "Lorenzo Demeio (Devrar)"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "elliptic-pizza.sage",
+      "type": "upload",
+      "path": "./attachments/elliptic-pizza.sage"
+    }
+  ],
+  "flags": [
+    "^flag\\{1sog3ny_b4s3d_crypt0_w1ll_surv1v3!\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 600
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

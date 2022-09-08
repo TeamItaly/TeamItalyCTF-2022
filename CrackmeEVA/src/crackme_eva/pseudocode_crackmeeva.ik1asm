@@ -1,0 +1,171 @@
+# Pseudocode of crackme_eva.ik1vm
+# 0 is the ro_data tape
+# 1 is the data tape
+
+# Prints the ro_data tape till a \x00 is found
+sub 2 2
+:print_loop
+    put 1
+    inc 1
+    load 1 1
+    eql 1 2
+    fneg
+jmp print_loop
+inc 1
+
+# read len flag from rodata and store it in reg4 
+load 1 4 
+inc 1
+
+# copy 24 bytes from ro_data to data: len(flag), payload_offset, payload_len, payload_key
+sub 3 3
+addi 3 23
+:flag_pos_loop
+    load 1 5
+    store 5
+    less 2 3
+    addi 2 1
+    inc 0
+    inc 1
+jmp flag_pos_loop
+
+# copy len flag in reg1
+mov 1 4 
+
+# read flag from stdin and store it in data
+sub 2 2
+addi 2 1
+:label3
+    get
+    inc 0
+    less 2 4
+    addi 2 1
+jmp label3
+
+# Antidebug routine activation
+subi 1 {len(flag)-37}
+addi 3 233              # reg3=0
+div 2 3                 # trigger division per 0 error (call antidebug routine)
+fneg					# antidebug will set the flag to 1 
+jmp jmpover1			# if antidebug didn't set the flag, continue to jumpover1
+
+# This branch is executed only if the debugger has been detected
+# It checks whether the flag format is correct
+dec 0
+load 0 1   # loading the last flag char in reg1
+sub 2 2
+addi 2 125 # loading '}' in reg2
+eql 1 2
+fneg
+jmp print_fail_format # if the last char is not '}'
+
+# check the first part: 'flag{'
+# go back to pos of '{'
+sub 3 3
+sub 4 4
+addi 4 33
+:label_loop_check
+	dec 0
+	addi 3 1
+	less 3 4
+jmp label_loop_check
+subi 2 2
+load 0 1
+eql 1 2
+fneg
+jmp print_fail_format # check '{'
+dec 0
+subi 2 20
+load 0 1
+eql 1 2
+fneg
+jmp print_fail_format # check 'g'
+dec 0
+subi 2 6
+load 0 1
+eql 1 2
+fneg
+jmp print_fail_format # check 'a'
+dec 0
+subi 2 245
+load 0 1
+eql 1 2
+fneg
+jmp print_fail_format # check 'l'
+dec 0
+subi 2 6
+load 0 1
+eql 1 2
+jmp print_fail # the flag format was correct. go print the fail message.
+fneg
+jmp print_fail_format # 'f' was wrong
+
+# stub. Mostly because I can do short jumps, should fix the emulator with unsigned chars etc.
+:jmpover1
+fneg
+jmp jmpover2
+
+# print the "Not even the flag format...?" string
+:print_fail_format
+puti 10
+puti 78
+puti 111
+puti 116
+# ... etc., you get the idea
+
+# some rubbish to make the program exit (return actually)
+"\x18\x21"
+
+# stub. Same as jumpover1
+:jmpover2
+fneg
+jmp overflow
+
+# print the "Oh no...\nWe better get ready for another impact." string
+:print_fail
+# also with puti ...
+# ...
+# ...
+# ...
+
+# some rubbish to make the program exit (return actually)
+"\x10\x01"
+
+# Code that will overwrite the emulator's return address. 
+# Load, store, inc are junk ops. The calls are the only important ones.
+:overflow
+load 1 1
+store 1
+inc 1
+load 1 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+store 1
+inc 0
+call 0 0
+# ... this block of instructions here is repeated 103 times
+
+# Finally, some x86-64 code
+# ################### jump backdoor ################# #
+# mov rax, 0x71a177                                   #
+# xor eax, 0x71a177^backdoor_addr                     #
+# push rax                                            #
+# ret                                                 #
+# ################################################### #
+# this code makes the program return (unrecognized opcode)
+# the last call wrote the address of this code in the return addr of the emulator
+# this stub is jumping to the emulator's backdor
+# the backdor will decrypt the ro_data section of the vm and jump to it
+# the content of the ro_data section is x86-64 bytecode, that does the true checks
+# the code of the checks is in main_check.asm

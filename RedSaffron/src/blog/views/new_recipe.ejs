@@ -1,0 +1,28 @@
+<%- include('header') -%>
+
+
+<div class="p-4 d-flex justify-content-center">
+
+    <form action="" method="POST">
+
+        <div class="form-outline mb-2">
+            <input class="form-control" name="title" type="text" placeholder="Recipe title" />
+        </div>
+
+        <div class="form-outline mb-2">
+            <textarea class="form-control" name="content" placeholder="Insert the recipe content here"></textarea>
+        </div>
+
+        <div class="form-outline mb-3 d-flex justify-content-center">
+            <input class="mx-2" name="public" type="checkbox" id="publiccheck" />
+            <label for="publiccheck">public? <span title="plz avoid making exploits public">&#128712;</span></label>
+        </div>
+
+        <button type="submit" class="btn btn-primary col-12 mb-4">Create</button>
+    </form>
+
+</div>
+
+
+
+<%- include('footer') -%>

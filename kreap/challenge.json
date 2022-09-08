@@ -1,0 +1,39 @@
+{
+  "title": "kreap",
+  "description": "One day I woke up and wanted to create a _kreap_... So I created a _kreap_.\nIt just happens I didn't know about DAX back then...\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc kreap.challs.teamitaly.eu 15007`\n\nchall sha1sum: `210f490fe68cfa7999ee32a9a98f492d3fa86490`\n\nkreap.ko sha1sum: `827a52d0c79722574be6420fa5811817b42231d4`\n\nAuthor: @collodel",
+  "authors": [
+    "Carlo Collodel (collodel)"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "chall",
+      "type": "upload",
+      "path": "./attachments/chall"
+    },
+    {
+      "name": "kreap.ko",
+      "type": "upload",
+      "path": "./attachments/kreap.ko"
+    }
+  ],
+  "flags": [
+    "^flag\\{N3xt_t1m3_1_7h1nk_i'l1_g0_w17h_l1bc_h34p!!\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 60
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  imagestore2:
+    build: .
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - '15013:5555'

@@ -1,0 +1,34 @@
+{
+  "title": "ImageStore",
+  "description": "I keep too many photos of pizzas on my computer and my drive is almost full.\nUnfortunately I can't simply upload them to Google Photos because I don't like public cloud.\nSo I decided to write my own CLI service to store all my images!\n\nCan you read `/flag`?\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc imagestore.challs.teamitaly.eu 15000`\n\nTip: to input a line longer than 4095 characters on your terminal, run `stty -icanon; nc imagestore.challs.teamitaly.eu 15000`.\n\nAuthor: @napaalm",
+  "authors": [
+    "Antonio Napolitano (napaalm)"
+  ],
+  "tags": [
+    "misc"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "imagestore.py",
+      "type": "upload",
+      "path": "./attachments/imagestore.py"
+    }
+  ],
+  "flags": [
+    "^flag\\{d0nt_tru5t_M4gic_Byt3s\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

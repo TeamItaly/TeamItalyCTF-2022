@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Admin Panel - Schei Checker</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <script src="/assets/js/sitecode/adminpanel.js"></script>
+  </head>
+
+  <body onload="adminPanelLoad()">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/"
+          ><img style="width: min(5vw, 40px)" src="/assets/img/logo.png" /><span
+            style="padding-left: 10px"
+            ><strong>Schei Checker</strong><br /></span></a
+        ><a href="#" onclick="adminPanelLogout()">Logout</a>
+      </div>
+    </nav>
+    <section class="py-5 mt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <p id="adminFlag" style="margin: 0px">Loading...</p>
+            <noscript><p>This website will not work without Javascript.</p></noscript>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center" style="padding-top: 50px; width: 100%">
+          <div
+            class="col text-center d-flex justify-content-center align-items-center align-items-start"
+            style="
+              color: #fff;
+              border-radius: 10px;
+              background: rgba(146, 146, 146, 0.13);
+              width: fit-content;
+              max-width: fit-content;
+              margin: 30px;
+            "
+          >
+            <div>
+              <div class="row">
+                <div class="col row d-flex justify-content-center align-items-start">
+                  <p
+                    class="text-center"
+                    style="margin-top: 10px; margin-bottom: 0px; width: min(200px, 29vw)"
+                  >
+                    Change password:
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div style="margin-top: 10px">
+                    <input
+                      type="password"
+                      id="changePwOld"
+                      style="border-width: 0px; border-radius: 1px; width: min(200px, 29vw)"
+                      placeholder="Old Password:"
+                    />
+                  </div>
+                  <div style="margin-top: 10px">
+                    <input
+                      type="password"
+                      id="changePwNew"
+                      style="border-width: 0px; border-radius: 1px; width: min(200px, 29vw)"
+                      placeholder="New Password:"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      width: min(200px, 29vw);
+                      border-radius: 2px;
+                    "
+                    onclick="adminExecuteChangePw()"
+                  >
+                    Go
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col text-center d-md-flex justify-content-center align-items-center align-items-start"
+            style="
+              color: #fff;
+              border-radius: 10px;
+              background: rgba(146, 146, 146, 0.13);
+              width: fit-content;
+              max-width: fit-content;
+              margin: 30px;
+            "
+          >
+            <div>
+              <div class="">
+                <div class="col row d-flex justify-content-center align-items-start">
+                  <p
+                    class="text-center"
+                    style="margin-top: 10px; margin-bottom: 0px; width: min(200px, 29vw)"
+                  >
+                    Debug
+                  </p>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col">
+                  <div style="margin-top: 10px">
+                    <a href="#" onclick="adminShowRawPriceData()">Show raw ITL price data</a>
+                  </div>
+                  <div style="margin-top: 10px">
+                    <a href="#" onclick="adminShowDebugInfo()">Show debug info</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark"></footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+  </body>
+</html>

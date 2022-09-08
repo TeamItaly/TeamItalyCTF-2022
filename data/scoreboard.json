@@ -1,0 +1,1405 @@
+{
+    "tasks": [
+        "ImageStore",
+        "ImageStore2",
+        "Family Business",
+        "Flag proxy",
+        "Schei Checker",
+        "Red Saffron",
+        "Lazy platform",
+        "The missing half",
+        "GPOCS",
+        "Elliptic Pizza",
+        "Speaking with hands",
+        "Spaghetti VM",
+        "Alice's Adventures in Goland",
+        "Ik1VM - CrackmeEVA",
+        "Safe Pizza Orders",
+        "Atomic Pizza",
+        "FamilyRecipes",
+        "kreap",
+        "Mario's Metaverse Marketplace"
+    ],
+    "standings": [
+        {
+            "pos": 1,
+            "team": "pwnthem0le",
+            "score": 4378,
+            "taskStats": {
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662659204
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662658361
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662657867
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662637736
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662608349
+                },
+                "Elliptic Pizza": {
+                    "points": 500,
+                    "time": 1662606836
+                },
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662597657
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662584675
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662574966
+                }
+            },
+            "lastAccept": 1662659204
+        },
+        {
+            "pos": 2,
+            "team": "z3r0.team",
+            "score": 3882,
+            "taskStats": {
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662658309
+                },
+                "Mario's Metaverse Marketplace": {
+                    "points": 500,
+                    "time": 1662645788
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662643579
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662634363
+                },
+                "Safe Pizza Orders": {
+                    "points": 500,
+                    "time": 1662631983
+                },
+                "Red Saffron": {
+                    "points": 500,
+                    "time": 1662615244
+                },
+                "ImageStore2": {
+                    "points": 500,
+                    "time": 1662610100
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662610040
+                }
+            },
+            "lastAccept": 1662658309
+        },
+        {
+            "pos": 3,
+            "team": "ABH",
+            "score": 3378,
+            "taskStats": {
+                "Atomic Pizza": {
+                    "points": 500,
+                    "time": 1662656954
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662654395
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662632220
+                },
+                "Safe Pizza Orders": {
+                    "points": 500,
+                    "time": 1662618100
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662606964
+                },
+                "FamilyRecipes": {
+                    "points": 500,
+                    "time": 1662585894
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662575882
+                }
+            },
+            "lastAccept": 1662656954
+        },
+        {
+            "pos": 4,
+            "team": "TeamPortugal",
+            "score": 2882,
+            "taskStats": {
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662653870
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662650938
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662649337
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662642279
+                },
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662587322
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662575885
+                }
+            },
+            "lastAccept": 1662653870
+        },
+        {
+            "pos": 5,
+            "team": "hxp",
+            "score": 2879,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662655278
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662654774
+                },
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662652720
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662645274
+                },
+                "Elliptic Pizza": {
+                    "points": 500,
+                    "time": 1662631643
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662626957
+                }
+            },
+            "lastAccept": 1662655278
+        },
+        {
+            "pos": 6,
+            "team": "m0unt41n",
+            "score": 2383,
+            "taskStats": {
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662641391
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662601636
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662586065
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662582593
+                },
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662581263
+                }
+            },
+            "lastAccept": 1662641391
+        },
+        {
+            "pos": 7,
+            "team": "...",
+            "score": 2378,
+            "taskStats": {
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662596804
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662588761
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662587452
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662582054
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662578505
+                }
+            },
+            "lastAccept": 1662596804
+        },
+        {
+            "pos": 8,
+            "team": "ECSC_Team_France",
+            "score": 1883,
+            "taskStats": {
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662655582
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662643681
+                },
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662643474
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662579531
+                }
+            },
+            "lastAccept": 1662655582
+        },
+        {
+            "pos": 9,
+            "team": "EVERYTHING",
+            "score": 1882,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662610081
+                },
+                "ImageStore2": {
+                    "points": 500,
+                    "time": 1662599840
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662599764
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662586480
+                }
+            },
+            "lastAccept": 1662610081
+        },
+        {
+            "pos": 10,
+            "team": "Lilac",
+            "score": 1879,
+            "taskStats": {
+                "Safe Pizza Orders": {
+                    "points": 500,
+                    "time": 1662631141
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662612895
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662599967
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662596086
+                }
+            },
+            "lastAccept": 1662631141
+        },
+        {
+            "pos": 11,
+            "team": "BeautifulSSSUP",
+            "score": 1878,
+            "taskStats": {
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662653493
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662645885
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662641203
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662626857
+                }
+            },
+            "lastAccept": 1662653493
+        },
+        {
+            "pos": 12,
+            "team": "MadrHacks",
+            "score": 1878,
+            "taskStats": {
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662657759
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662631910
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662598513
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662587052
+                }
+            },
+            "lastAccept": 1662657759
+        },
+        {
+            "pos": 13,
+            "team": "USTC-NEBULA",
+            "score": 1500,
+            "taskStats": {
+                "Ik1VM - CrackmeEVA": {
+                    "points": 500,
+                    "time": 1662648196
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662647633
+                },
+                "Alice's Adventures in Goland": {
+                    "points": 500,
+                    "time": 1662631718
+                }
+            },
+            "lastAccept": 1662648196
+        },
+        {
+            "pos": 14,
+            "team": "fibonhack",
+            "score": 1412,
+            "taskStats": {
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662634968
+                },
+                "Alice's Adventures in Goland": {
+                    "points": 500,
+                    "time": 1662633004
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662628395
+                }
+            },
+            "lastAccept": 1662634968
+        },
+        {
+            "pos": 15,
+            "team": "TnomiPho",
+            "score": 1411,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662650927
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662645308
+                },
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662579132
+                }
+            },
+            "lastAccept": 1662650927
+        },
+        {
+            "pos": 16,
+            "team": "SocialEngineeringExperts",
+            "score": 1408,
+            "taskStats": {
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662593103
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662586533
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662574955
+                }
+            },
+            "lastAccept": 1662593103
+        },
+        {
+            "pos": 17,
+            "team": "TeamOceania",
+            "score": 1408,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662640260
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662633724
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662582087
+                }
+            },
+            "lastAccept": 1662640260
+        },
+        {
+            "pos": 18,
+            "team": "0xFE",
+            "score": 1408,
+            "taskStats": {
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662646471
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662628545
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577760
+                }
+            },
+            "lastAccept": 1662646471
+        },
+        {
+            "pos": 19,
+            "team": "TAT",
+            "score": 1408,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662650351
+                },
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662648323
+                },
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662592845
+                }
+            },
+            "lastAccept": 1662650351
+        },
+        {
+            "pos": 20,
+            "team": "CTFY",
+            "score": 1383,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662638850
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662629649
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662587399
+                }
+            },
+            "lastAccept": 1662638850
+        },
+        {
+            "pos": 21,
+            "team": "pianka",
+            "score": 1383,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662644270
+                },
+                "Spaghetti VM": {
+                    "points": 500,
+                    "time": 1662640080
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577391
+                }
+            },
+            "lastAccept": 1662644270
+        },
+        {
+            "pos": 22,
+            "team": "coffin",
+            "score": 1383,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662644753
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662634819
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662618878
+                }
+            },
+            "lastAccept": 1662644753
+        },
+        {
+            "pos": 23,
+            "team": "team.caca",
+            "score": 1383,
+            "taskStats": {
+                "Safe Pizza Orders": {
+                    "points": 500,
+                    "time": 1662646861
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662631464
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577407
+                }
+            },
+            "lastAccept": 1662646861
+        },
+        {
+            "pos": 24,
+            "team": "Austriaaaaaaaaaaa",
+            "score": 1383,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662651860
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662636733
+                },
+                "Speaking with hands": {
+                    "points": 500,
+                    "time": 1662633503
+                }
+            },
+            "lastAccept": 1662651860
+        },
+        {
+            "pos": 25,
+            "team": "pwnthenope",
+            "score": 1379,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662647244
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662632369
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662625864
+                }
+            },
+            "lastAccept": 1662647244
+        },
+        {
+            "pos": 26,
+            "team": "KCCorp",
+            "score": 1379,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662651798
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662601644
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662596291
+                }
+            },
+            "lastAccept": 1662651798
+        },
+        {
+            "pos": 27,
+            "team": "idek",
+            "score": 971,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662589666
+                },
+                "Schei Checker": {
+                    "points": 500,
+                    "time": 1662583399
+                }
+            },
+            "lastAccept": 1662589666
+        },
+        {
+            "pos": 28,
+            "team": "fantasmaformaggino",
+            "score": 912,
+            "taskStats": {
+                "GPOCS": {
+                    "points": 500,
+                    "time": 1662594019
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662582698
+                }
+            },
+            "lastAccept": 1662594019
+        },
+        {
+            "pos": 29,
+            "team": "MonelloWare",
+            "score": 912,
+            "taskStats": {
+                "Family Business": {
+                    "points": 500,
+                    "time": 1662659095
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662584327
+                }
+            },
+            "lastAccept": 1662659095
+        },
+        {
+            "pos": 30,
+            "team": "V-HackaBoia",
+            "score": 911,
+            "taskStats": {
+                "ImageStore": {
+                    "points": 499,
+                    "time": 1662646386
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662600257
+                }
+            },
+            "lastAccept": 1662646386
+        },
+        {
+            "pos": 31,
+            "team": "Bruh",
+            "score": 908,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662589239
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662575195
+                }
+            },
+            "lastAccept": 1662589239
+        },
+        {
+            "pos": 32,
+            "team": "spritzers",
+            "score": 908,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662592428
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662582502
+                }
+            },
+            "lastAccept": 1662592428
+        },
+        {
+            "pos": 33,
+            "team": "CSALab_Sec",
+            "score": 908,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662643357
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662627865
+                }
+            },
+            "lastAccept": 1662643357
+        },
+        {
+            "pos": 34,
+            "team": "grhkm-solo",
+            "score": 908,
+            "taskStats": {
+                "The missing half": {
+                    "points": 496,
+                    "time": 1662658031
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662653119
+                }
+            },
+            "lastAccept": 1662658031
+        },
+        {
+            "pos": 35,
+            "team": "ly4k",
+            "score": 883,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662583367
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662575955
+                }
+            },
+            "lastAccept": 1662583367
+        },
+        {
+            "pos": 36,
+            "team": "Srdnlen",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662586252
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662576179
+                }
+            },
+            "lastAccept": 1662586252
+        },
+        {
+            "pos": 37,
+            "team": "Pwnzer0tt1",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662602973
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662592854
+                }
+            },
+            "lastAccept": 1662602973
+        },
+        {
+            "pos": 38,
+            "team": "Nupakachi",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662606221
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662583973
+                }
+            },
+            "lastAccept": 1662606221
+        },
+        {
+            "pos": 39,
+            "team": "Milano_Capitale",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662609100
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662587750
+                }
+            },
+            "lastAccept": 1662609100
+        },
+        {
+            "pos": 40,
+            "team": "SH4H33N",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662625068
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662624778
+                }
+            },
+            "lastAccept": 1662625068
+        },
+        {
+            "pos": 41,
+            "team": "pwnormus",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662625334
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662579763
+                }
+            },
+            "lastAccept": 1662625334
+        },
+        {
+            "pos": 42,
+            "team": "RubiDiCubrik",
+            "score": 883,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662629569
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662583002
+                }
+            },
+            "lastAccept": 1662629569
+        },
+        {
+            "pos": 43,
+            "team": "InfoSecIITR",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662635839
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577607
+                }
+            },
+            "lastAccept": 1662635839
+        },
+        {
+            "pos": 44,
+            "team": "Hackappatoi",
+            "score": 883,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662639657
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662637031
+                }
+            },
+            "lastAccept": 1662639657
+        },
+        {
+            "pos": 45,
+            "team": "M0NT3C4RL0",
+            "score": 883,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662642018
+                },
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662594431
+                }
+            },
+            "lastAccept": 1662642018
+        },
+        {
+            "pos": 46,
+            "team": "Ristorante-pizzeria_viale_sarca",
+            "score": 883,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662659988
+                },
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662639449
+                }
+            },
+            "lastAccept": 1662659988
+        },
+        {
+            "pos": 47,
+            "team": "APT593",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662582836
+                }
+            },
+            "lastAccept": 1662582836
+        },
+        {
+            "pos": 48,
+            "team": "K1nd4SUS",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662622072
+                }
+            },
+            "lastAccept": 1662622072
+        },
+        {
+            "pos": 49,
+            "team": "csoc",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662625860
+                }
+            },
+            "lastAccept": 1662625860
+        },
+        {
+            "pos": 50,
+            "team": "Computer_Addicts",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662637593
+                }
+            },
+            "lastAccept": 1662637593
+        },
+        {
+            "pos": 51,
+            "team": "NASLAB",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662637824
+                }
+            },
+            "lastAccept": 1662637824
+        },
+        {
+            "pos": 52,
+            "team": "T1r4m1sudo",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662643283
+                }
+            },
+            "lastAccept": 1662643283
+        },
+        {
+            "pos": 53,
+            "team": "HousesAndHumans",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662648039
+                }
+            },
+            "lastAccept": 1662648039
+        },
+        {
+            "pos": 54,
+            "team": "LetzPwn",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662651241
+                }
+            },
+            "lastAccept": 1662651241
+        },
+        {
+            "pos": 55,
+            "team": "Komi-Permyak_Team",
+            "score": 471,
+            "taskStats": {
+                "Flag proxy": {
+                    "points": 471,
+                    "time": 1662655402
+                }
+            },
+            "lastAccept": 1662655402
+        },
+        {
+            "pos": 56,
+            "team": "ZOE",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662575445
+                }
+            },
+            "lastAccept": 1662575445
+        },
+        {
+            "pos": 57,
+            "team": "PineapplePizza",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577258
+                }
+            },
+            "lastAccept": 1662577258
+        },
+        {
+            "pos": 58,
+            "team": "Cryptoverse",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662577285
+                }
+            },
+            "lastAccept": 1662577285
+        },
+        {
+            "pos": 59,
+            "team": "davi_bart",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662579202
+                }
+            },
+            "lastAccept": 1662579202
+        },
+        {
+            "pos": 60,
+            "team": "veni_vidi_comedi",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662580680
+                }
+            },
+            "lastAccept": 1662580680
+        },
+        {
+            "pos": 61,
+            "team": "RecursionFairies",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662582100
+                }
+            },
+            "lastAccept": 1662582100
+        },
+        {
+            "pos": 62,
+            "team": "str4ng3_b0yz",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662583183
+                }
+            },
+            "lastAccept": 1662583183
+        },
+        {
+            "pos": 63,
+            "team": "DragonSec_SI",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662583215
+                }
+            },
+            "lastAccept": 1662583215
+        },
+        {
+            "pos": 64,
+            "team": "kanon",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662584197
+                }
+            },
+            "lastAccept": 1662584197
+        },
+        {
+            "pos": 65,
+            "team": "Uwu_nahyu",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662584340
+                }
+            },
+            "lastAccept": 1662584340
+        },
+        {
+            "pos": 66,
+            "team": "PwnProphecy",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662585641
+                }
+            },
+            "lastAccept": 1662585641
+        },
+        {
+            "pos": 67,
+            "team": "TowerOfHanoi",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662586209
+                }
+            },
+            "lastAccept": 1662586209
+        },
+        {
+            "pos": 68,
+            "team": "UnisH4ck",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662586685
+                }
+            },
+            "lastAccept": 1662586685
+        },
+        {
+            "pos": 69,
+            "team": "sly-scribes",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662589155
+                }
+            },
+            "lastAccept": 1662589155
+        },
+        {
+            "pos": 70,
+            "team": "noraneco",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662591998
+                }
+            },
+            "lastAccept": 1662591998
+        },
+        {
+            "pos": 71,
+            "team": "ScriptKittiesCA",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662616847
+                }
+            },
+            "lastAccept": 1662616847
+        },
+        {
+            "pos": 72,
+            "team": "93wilsonlu",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662630969
+                }
+            },
+            "lastAccept": 1662630969
+        },
+        {
+            "pos": 73,
+            "team": "arancinHaCK",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662645421
+                }
+            },
+            "lastAccept": 1662645421
+        },
+        {
+            "pos": 74,
+            "team": "Flaggermeister",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662646750
+                }
+            },
+            "lastAccept": 1662646750
+        },
+        {
+            "pos": 75,
+            "team": "jeppe",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662648448
+                }
+            },
+            "lastAccept": 1662648448
+        },
+        {
+            "pos": 76,
+            "team": "Birkenwald",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662649086
+                }
+            },
+            "lastAccept": 1662649086
+        },
+        {
+            "pos": 77,
+            "team": "randomguy",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662652898
+                }
+            },
+            "lastAccept": 1662652898
+        },
+        {
+            "pos": 78,
+            "team": "Royal-Military-Hackademy",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662654083
+                }
+            },
+            "lastAccept": 1662654083
+        },
+        {
+            "pos": 79,
+            "team": "comodo",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662654886
+                }
+            },
+            "lastAccept": 1662654886
+        },
+        {
+            "pos": 80,
+            "team": "peterrakolcza",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662655364
+                }
+            },
+            "lastAccept": 1662655364
+        },
+        {
+            "pos": 81,
+            "team": "Clowntools",
+            "score": 412,
+            "taskStats": {
+                "Lazy platform": {
+                    "points": 412,
+                    "time": 1662656296
+                }
+            },
+            "lastAccept": 1662656296
+        }
+    ]
+}

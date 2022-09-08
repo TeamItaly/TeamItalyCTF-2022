@@ -1,0 +1,30 @@
+<%- include('header') -%>
+
+<div class="row justify-content-center my-3">
+
+
+    <div class="col-6 text-center" style="background-color: #f8f9fa;">
+        <h1><%= title %></h1>
+
+        <p class="m-3">
+            <%- recipe %>
+        </p>
+
+    </div>
+
+    <div class="col-4 text-center">
+
+        <iframe style="border: 1px solid black;" srcdoc="<%= ad %>" sandbox="allow-scripts"></iframe>
+
+        <br />
+        <% if(locals.islogged && can_buy_ad){ %>
+        <a href="/buyad?recipeid=<%= recipeid %>">Buy ad</a>
+        <% } %>
+
+    </div>
+</div>
+
+<div class="fixed-bottom mb-2 text-center">
+    <a href="/report?recipeid=<%= recipeid %>">Report recipe</a>
+</div>
+<%- include('footer') -%>

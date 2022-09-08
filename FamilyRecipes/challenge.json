@@ -1,0 +1,34 @@
+{
+  "title": "FamilyRecipes",
+  "description": "I always think of the good old days, when my grandma used to cook me all my favourite recipes. I've spent years storing them in randomly placed post-its; now I've written a cool tool for my family that can store all our recipes in our home computer! Some of them are protected... I won't share my new secret pesto recipe, not even with them.\n\nWarning! For incredibly higher security, the data is not saved on the disk: if you think your family recipes are in danger, just unplug your home computer and no one will ever steal them!\n\nGet root and read the flag at /flag.txt\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc familyrecipes.challs.teamitaly.eu 15011`\n\nAuthor: @giulia",
+  "authors": [
+    "Giulia Martino (@giulia)"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "attachments.zip",
+      "type": "upload",
+      "path": "./attachments/attachments.zip"
+    }
+  ],
+  "flags": [
+    "^flag\\{g0d_bl3ss_gr4ndm4s_4nd_p3st0\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 10
+  }
+}

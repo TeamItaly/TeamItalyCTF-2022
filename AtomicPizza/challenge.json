@@ -1,0 +1,49 @@
+{
+  "title": "Atomic Pizza",
+  "description": "I found this pizzeria where they let you create your own toppings, you should try it.\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc atomic-pizza.challs.teamitaly.eu 15010`\n\natomic_pizza sha1sum: `7238c203ee8ff69bc49c443927b39385c663dd14`\n\nAuthor: @Chino",
+  "authors": [
+    "Marco Meinardi (@Chino)"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "Dockerfile",
+      "type": "upload",
+      "path": "./attachments/Dockerfile"
+    },
+    {
+      "name": "atomic_pizza",
+      "type": "upload",
+      "path": "./attachments/atomic_pizza"
+    },
+    {
+      "name": "docker-compose.yml",
+      "type": "upload",
+      "path": "./attachments/docker-compose.yml"
+    },
+    {
+      "name": "flag.txt",
+      "type": "upload",
+      "path": "./attachments/flag.txt"
+    }
+  ],
+  "flags": [
+    "^flag\\{you_cannot_cook_misaligned_pizza\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 60
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

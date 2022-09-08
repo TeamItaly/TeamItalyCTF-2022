@@ -1,0 +1,34 @@
+{
+  "title": "Red Saffron",
+  "description": "Check out the original website of italian recipes [here](http://saffron.challs.teamitaly.eu)!\n\nAuthor: @xatophi",
+  "authors": [
+    "Stefano Alberto (xatophi)"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "red-saffron.zip",
+      "type": "upload",
+      "path": "./attachments/red-saffron.zip"
+    }
+  ],
+  "flags": [
+    "^flag\\{m0n3y_pr1n7er_g0__BRRRRRRRRR\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 25
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

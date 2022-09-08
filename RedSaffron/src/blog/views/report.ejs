@@ -1,0 +1,19 @@
+<%- include('header') -%>
+
+<div class="p-4 d-flex justify-content-center">
+
+    <form action="" method="POST">
+
+        <div class="form-outline mb-2">
+            <input name="recipeid" type="text" class="form-control" value="<%= recipeid %>" />
+        </div>
+
+        <button type="submit" id="submitbtn" class="btn btn-primary col-12 mb-4" onclick="document.getElementById('submitbtn').setAttribute('disabled',true); document.getElementById('spinner').style.display = 'inline-block'">
+            <span id="spinner" class="spinner-border spinner-border-sm" style="display: none;"></span>
+            Report
+        </button>
+    </form>
+
+</div>
+
+<%- include('footer') -%>

@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  m3:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '15009:1337'

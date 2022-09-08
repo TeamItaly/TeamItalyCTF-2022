@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pizza_orders:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '15008:5000'
+#    environment:
+#      - POW=6
+#      - TIMEOUT_POW=60
+#      - TIMEOUT_CHALL=120

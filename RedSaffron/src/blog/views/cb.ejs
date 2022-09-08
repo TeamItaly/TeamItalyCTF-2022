@@ -1,0 +1,28 @@
+<%- include('header') -%>
+
+<script>
+    console.log(document.cookie)
+    next = /next=([^;]*)/.exec(document.cookie)
+    // console.log(next)
+    next = next ? decodeURIComponent(next[1]) : '/'
+    console.log(next)
+
+    if (next.startsWith('/registered')) {
+        next = '/'
+    }
+
+    sp = new URLSearchParams(location.hash.substring(1));
+    token = sp.get('token')
+    if (token) {
+        document.cookie = 'token=' + token;
+        document.write('logged in')
+        document.location = next
+    } else {
+        spe = new URLSearchParams({
+            msg: sp.get('error')
+        });
+        document.location = '/error?' + spe.toString()
+    }
+</script>
+
+<%- include('footer') -%>

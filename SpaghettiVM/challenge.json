@@ -1,0 +1,34 @@
+{
+  "title": "Spaghetti VM",
+  "description": "Have a look at this spaghetti coded VM, wait... It's just Javascript.\n\nAuthor: @devgianlu",
+  "authors": [
+    "Gianluca Altomani (devgianlu)"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "svm.js",
+      "type": "upload",
+      "path": "./attachments/svm.js"
+    }
+  ],
+  "flags": [
+    "^flag\\{J4va5cr1pt_vm5_4r3_s0_ea5y\\}$"
+  ],
+  "checker": {
+    "enabled": false,
+    "config": {
+      "timeout": -1
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

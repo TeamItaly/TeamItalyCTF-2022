@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  saffron-blog:
+    build: ./blog
+    environment:
+      - AUTH_HOST_INT=http://uauth.challs.teamitaly.eu
+      - AUTH_HOST_EXT=http://uauth.challs.teamitaly.eu
+      - BLOG_HOST=http://saffron.challs.teamitaly.eu
+      - BOT_URL=http://saffron-bot:9999/visit
+      - FLAG=flag{m0n3y_pr1n7er_g0__BRRRRRRRRR}
+    ports:
+      - 15003:3001
+
+  saffron-uauth:
+    build: ./uauth
+    environment:
+      - ADMIN_PASSWORD=A9enrScoMkqxZzrbWZBVnQB2H
+    ports:
+      - 3000:3000
+
+  saffron-bot:
+    build: ./bot
+    environment:
+      - USERNAME=admin
+      - PASSWORD=A9enrScoMkqxZzrbWZBVnQB2H
+      - AUTH_URL=http://uauth.challs.teamitaly.eu/auth

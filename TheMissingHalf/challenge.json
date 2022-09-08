@@ -1,0 +1,39 @@
+{
+  "title": "The missing half",
+  "description": "Gabibbo is desperate, his wife has been missing for years and some even say that she never existed.\nBut this is about to change, he has managed to find a clue that maybe will lead him to her, help him decipher it.\n\nAuthor: @Elius",
+  "authors": [
+    "Elia Cal (Elius)"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "missing-half.out",
+      "type": "upload",
+      "path": "./attachments/missing-half.out"
+    },
+    {
+      "name": "missing-half.py",
+      "type": "upload",
+      "path": "./attachments/missing-half.py"
+    }
+  ],
+  "flags": [
+    "^flag\\{Sh3_i3_h1ding_in_P0l4nd\\}$"
+  ],
+  "checker": {
+    "enabled": false,
+    "config": {
+      "timeout": -1
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

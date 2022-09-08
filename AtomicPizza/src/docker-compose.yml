@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  atomic_pizza:
+    build: .
+    container_name: pizzeria
+    restart: unless-stopped
+    ports:
+      - 15010:12321

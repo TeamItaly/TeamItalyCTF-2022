@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  elliptic-pizza:
+    build: .
+    ports:
+      - '15012:5555'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{1sog3ny_b4s3d_crypt0_w1ll_surv1v3!}

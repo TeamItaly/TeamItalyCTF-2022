@@ -1,0 +1,1 @@
+flag{d0nt_tru5t_M4gic_Byt3s}

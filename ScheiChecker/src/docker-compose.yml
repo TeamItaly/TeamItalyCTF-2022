@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  schei-redis:
+    image: redis:alpine
+    command: redis-server --include /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+
+  schei-pricescache:
+    volumes:
+      - ./prices-cache.config.js:/usr/app/config.js
+    build:
+      context: ./prices-cache
+    command: node index.js
+    networks:
+      - default
+      - internet
+
+  schei-reverseproxy:
+    image: hpello/tcp-proxy
+    command: schei-backend 8080
+    ports:
+      - '${PORT}:8080'
+    networks:
+      - default
+      - internet
+
+  schei-backend:
+    volumes:
+      - ./backend.config.js:/usr/app/config.js
+    build:
+      context: ./backend
+    command: node index.js
+    environment:
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - FLAG=${FLAG}
+networks:
+  default:
+    internal: true
+    driver: bridge
+  internet:

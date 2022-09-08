@@ -1,0 +1,9 @@
+src/prices-cache/node_modules
+src/prices-cache/config.js
+src/backend/node_modules
+src/backend/config.js
+src/prices-cache.config.js
+src/backend.config.js
+src/.env
+src/zip_build
+src/build.zip

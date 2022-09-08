@@ -1,0 +1,2 @@
+KERNEL=="kreapctl", GROUP:="kreap", MODE:="0660"
+KERNEL=="kreapmem*", GROUP:="kreap", MODE:="0660"

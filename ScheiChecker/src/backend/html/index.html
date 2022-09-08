@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Home - Schei Checker</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css" />
+    <script src="/assets/js/sitecode/index.js"></script>
+  </head>
+
+  <body onload="indexLoad()">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/"
+          ><img src="/assets/img/logo.png" style="width: min(5vw, 40px)" /><span
+            style="padding-left: 10px"
+            >Schei Checker</span
+          ></a
+        ><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"></li>
+          </ul>
+          <a href="/login.html">Admin</a>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-dark pt-5" data-aos="fade-up" style="height: 100vh">
+      <div
+        class="d-flex d-flex justify-content-center align-items-center justify-content-center align-items-center"
+        style="width: 100%; display: flex; flex-direction: column; height: 100%"
+      >
+        <div data-aos="fade-up" style="margin: 10px; padding-top: 60px; height: 100%">
+          <noscript
+            ><p>
+              This website will not work without Javascript. Data wll not be updated.
+            </p></noscript
+          >
+          <div
+            class="d-flex d-flex justify-content-center align-items-center justify-content-start align-items-center"
+            style="margin-bottom: 10px"
+          >
+            <img src="/assets/img/logo.png" style="width: 4vw" />
+            <div
+              class="d-flex d-sm-flex justify-content-start justify-content-sm-start align-items-sm-center"
+              style="width: 100%; margin: 0px; padding: 0px"
+            >
+              <h1
+                class="d-flex justify-content-start align-items-center"
+                style="margin-left: 0.5vw; font-size: 4vw; margin-bottom: 0px; width: fit-content"
+              >
+                Italian Lira
+              </h1>
+              <div
+                class="d-flex align-items-center"
+                style="
+                  margin: 0px;
+                  margin-left: 1vw;
+                  padding: 0px;
+                  background: rgba(255, 255, 255, 0.14);
+                  border-radius: 5px;
+                  padding-bottom: 0px;
+                  padding-top: 0px;
+                  padding-right: 0.7vw;
+                  padding-left: 0.7vw;
+                  width: fit-content;
+                "
+              >
+                <p
+                  style="
+                    margin: 0px;
+                    margin-bottom: 0px;
+                    font-size: 2.1vw;
+                    padding: 0px;
+                    color: rgb(255, 138, 0);
+                  "
+                >
+                  ITL
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex d-flex justify-content-start align-items-center justify-content-start align-items-center justify-content-start"
+          >
+            <span style="font-size: max(1vw, 12px)"
+              >ITL (<a href="https://italianlira.ws">Italian Lira Coin</a>) is an ERC20 Token based
+              on Ethereum blockchain.<br />This site shows you the updated EUR price for this
+              token.<br />Prices from CoinMarketCap. <br />Reloading price in
+              <span id="reloadtime">0 seconds</span></span
+            >
+          </div>
+        </div>
+        <div
+          class="d-flex d-flex justify-content-center align-items-center justify-content-center align-items-center"
+          style="height: 100%; padding: 0px; margin: 0px"
+        >
+          <p
+            id="up-icon"
+            class="text-center"
+            hidden
+            style="
+              font-size: 4vw;
+              margin: 0px;
+              background: rgb(92, 195, 56);
+              border-radius: 15px;
+              width: 4vw;
+              margin-right: 0.5vw;
+            "
+          >
+            ↑
+          </p>
+          <p
+            id="down-icon"
+            class="text-center"
+            hidden
+            style="
+              font-size: 4vw;
+              margin: 0px;
+              background: rgb(195, 56, 56);
+              border-radius: 15px;
+              width: 4vw;
+              margin-right: 0.5vw;
+            "
+          >
+            ↓
+          </p>
+          <p
+            id="equals-icon"
+            class="text-center"
+            hidden
+            style="
+              font-size: 4vw;
+              margin: 0px;
+              background: rgba(255, 255, 255, 0.37);
+              border-radius: 15px;
+              width: 4vw;
+              margin-right: 0.5vw;
+            "
+          >
+            =
+          </p>
+          <h1
+            id="liraprice"
+            style="
+              margin: 0px;
+              font-size: 4vw;
+              padding: 0px;
+              color: rgb(255, 255, 255);
+              height: fit-content;
+              width: fit-content;
+            "
+          >
+            Unknown price<br />
+          </h1>
+        </div>
+        <div
+          class="d-flex d-sm-flex justify-content-center align-items-end justify-content-sm-center align-items-sm-end"
+          style="height: 100%; padding-bottom: 18px"
+        >
+          <p style="margin: 0px; padding: 0px; font-size: max(0.7vw, 10px)">
+            This site is not affiliated in any shape or form with the Italian Lira ITL Token.<br />This
+            site is not affiliated in any shape or form with the Italian Lira&nbsp;currency of Italy
+            between 1861 and 2002.<br />
+          </p>
+        </div>
+      </div>
+    </header>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/script.min.js"></script>
+  </body>
+</html>

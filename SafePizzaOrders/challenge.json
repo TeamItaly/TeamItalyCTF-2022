@@ -1,0 +1,39 @@
+{
+  "title": "Safe Pizza Orders",
+  "description": "Safe Pizza Orders is the new Pizza's Store managment system of last generation. \ud83c\udf55\n\nThe new system allow to have fast and safe orders from any kind of digital attack.\n\n`We are waiting for your order to enjoy our quality pizza!`\n\n~~Some voices say that a crazy hacker was able to read a the top secret recipe (./pizza_secret_recipe) using some security bugs in this platform, are you able to steal it also?~~\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc pizza-orders.challs.teamitaly.eu 15008`\n\nAuthor: @domysh",
+  "authors": [
+    "Domingo Dirutigliano (DomySh)"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "safe_pizza_orders.zip",
+      "type": "upload",
+      "path": "./attachments/safe_pizza_orders.zip"
+    },
+    {
+      "name": "template.py",
+      "type": "upload",
+      "path": "./attachments/template.py"
+    }
+  ],
+  "flags": [
+    "^flag\\{\\$3cur1ty_w4s_NEVER_an_0pt10n\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

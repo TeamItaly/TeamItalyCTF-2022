@@ -1,0 +1,34 @@
+{
+  "title": "Alice's Adventures in Goland",
+  "description": "Welcome to the land of _**wonders**_...\n\ngoland sha1sum: `061e0dd1f8ca856f2b114370316a3f054900ffb9`\n\nOnce you solve the challenge, to get the flag connect to the remote service with:\n\n`nc alice-in-goland.challs.teamitaly.eu 15006`\n\nAuthor: @timetravel3",
+  "authors": [
+    "Simone Petroni (timetravel3)"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "goland",
+      "type": "upload",
+      "path": "./attachments/goland"
+    }
+  ],
+  "flags": [
+    "^flag\\{s0_h4v3_y0u_f0und_y0ur_w4y_0ut\\?\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

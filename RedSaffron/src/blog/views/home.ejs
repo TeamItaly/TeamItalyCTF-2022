@@ -1,0 +1,31 @@
+<%- include('header') -%>
+
+<div class="row justify-content-center my-3">
+
+    <div class="col-lg-9 text-center">
+        <h2>Post public and private recipes on this blog</h2>
+
+        </br>
+
+        <% if (locals.islogged) { %>
+
+        <a href="/new">Create a new recipe</a>
+
+        </br>
+
+        <a href="/private">Your private recipes</a>
+
+        </br>
+
+        <% } else { %>
+        If you are new, you can register <a href="/register">here</a>
+        </br>
+
+        <% } %>
+
+
+    </div>
+</div>
+
+
+<%- include('footer') -%>

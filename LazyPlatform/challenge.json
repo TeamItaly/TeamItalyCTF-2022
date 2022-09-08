@@ -1,0 +1,34 @@
+{
+  "title": "Lazy platform",
+  "description": "I'm too lazy to implement the decryption of the ciphertexts, so I'll just give you what you need and you'll do the rest.\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc lazy-platform.challs.teamitaly.eu 15004`\n\nAuthor: @mattiabrandon",
+  "authors": [
+    "Mattia Lorenzo Chiabrando (mattiabrandon)"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "lazy-platform.py",
+      "type": "upload",
+      "path": "./attachments/lazy-platform.py"
+    }
+  ],
+  "flags": [
+    "^flag\\{u53_s3cure_r4nd0m_numb3r_gen3r4t0rs\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

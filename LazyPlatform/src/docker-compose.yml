@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  lazy-platform:
+    build: .
+    ports:
+      - '15004:5555'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{u53_s3cure_r4nd0m_numb3r_gen3r4t0rs}

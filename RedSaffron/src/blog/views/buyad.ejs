@@ -1,0 +1,20 @@
+<%- include('header') -%>
+
+<div class="p-4 d-flex justify-content-center">
+
+    <form action="" method="POST">
+
+        <div class="form-outline mb-2">
+            <input name="recipeid" type="text" class="form-control" value="<%= recipeid %>" />
+        </div>
+
+        <div class="form-outline mb-3">
+            <textarea name="ad" type="text" class="form-control" placeholder="Insert the ad content here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary col-12 mb-4">Buy</button>
+    </form>
+
+</div>
+
+<%- include('footer') -%>

@@ -1,0 +1,34 @@
+{
+  "title": "Schei Checker",
+  "description": "[Schei Checker](http://schei-checker.challs.teamitaly.eu:15001) is the world's most-referenced price-tracking website for our beloved scheos.\n\nIts mission is to make knowing the precise value of scheos efficient globally by empowering retail users with unbiased, high quality and accurate information for drawing their own informed conclusions...\n\nBut I'm not sure on whether it's actually secure \ud83e\udd14\n\nAuthor: @shishcat",
+  "authors": [
+    "Jacopo Di Pumpo (shishcat)"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "schei-checker.zip",
+      "type": "upload",
+      "path": "./attachments/schei-checker.zip"
+    }
+  ],
+  "flags": [
+    "^flag\\{number_!1_f4n_0f_H77P_R3dis\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

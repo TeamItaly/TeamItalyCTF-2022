@@ -1,0 +1,34 @@
+{
+  "title": "Flag proxy",
+  "description": "I just added authentication to my flag service (server-back) thanks to a proxy (server-front), but a friend said it's useless...\n\nSite: [http://flag-proxy.challs.teamitaly.eu](http://flag-proxy.challs.teamitaly.eu)\n\nAuthor: @Giotino",
+  "authors": [
+    "Giovanni Minotti (Giotino)"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "flag-proxy.zip",
+      "type": "upload",
+      "path": "./attachments/flag-proxy.zip"
+    }
+  ],
+  "flags": [
+    "^flag\\{sanity_check\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

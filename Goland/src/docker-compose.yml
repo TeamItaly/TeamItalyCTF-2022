@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  goland:
+    build: ./Petroni/src
+    ports:
+      - '15006:6000'
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{s0_h4v3_y0u_f0und_y0ur_w4y_0ut?}

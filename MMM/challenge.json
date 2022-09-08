@@ -1,0 +1,34 @@
+{
+  "title": "Mario's Metaverse Marketplace",
+  "description": "What's a better CTF challenge than an half-finished, buggy software?\n\nOf course an half-finished, buggy software that lets you create NFTs!\n~~(No guarantees)~~\n\nBtw I forgot the private key to `flag.txt`, can you retrieve that for me?\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc mmm.challs.teamitaly.eu 15009`\n\nm3 sha1sum: `62f33d2da61bd25dfaadc59469f8410e74ff156d`\n\nAuthor: @hdesk",
+  "authors": [
+    "Mario Del Gaudio (hdesk)"
+  ],
+  "tags": [
+    "pwn"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "m3",
+      "type": "upload",
+      "path": "./attachments/m3"
+    }
+  ],
+  "flags": [
+    "^flag\\{th15_fl4g_n33d5_t0_b3_l0ng3r_th4n_m05t_t0_533_1f_y0u_c4n_r3p4ck_1nt5\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 30
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "GPOCS",
+  "description": "The Italian government has commissioned us to create a GPOCS (Generatore di Parole d'Ordine Crittograficamente Sicure).\nGiven its security, we doubt you could try to guess the password, as long as we rate-limit you...\n\nThis is a remote challenge, you can connect to the service with:\n\n`nc gpocs.challs.teamitaly.eu 15005`\n\nAuthor: @kientuong114",
+  "authors": [
+    "Kien Tuong Truong (kientuong114)"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "GPOCS.py",
+      "type": "upload",
+      "path": "./attachments/GPOCS.py"
+    },
+    {
+      "name": "words.txt",
+      "type": "upload",
+      "path": "./attachments/words.txt"
+    }
+  ],
+  "flags": [
+    "^flag\\{c4n_1_us3_fd1sk_t0_p4rt1t10n_my_k3ys\\?\\}$"
+  ],
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}

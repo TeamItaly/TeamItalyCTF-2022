@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  front:
+    build: ./server-front
+    ports:
+      - '1337:1337'
+    environment:
+      - BACK=back
+      - AUTH=hxuing98ungheuitghn4837yhmz9mosur943
+  back:
+    build: ./server-back
+    environment:
+      - FLAG=flag{sanity_check}

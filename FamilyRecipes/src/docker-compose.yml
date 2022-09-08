@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  challenge:
+    image: giuliamartino/teamitalyctf-martino
+    build: .
+    ports:
+      - '15011:1337'
+    restart: unless-stopped
+    volumes:
+      - ./bzImage:/opt/bzImage
+      - ./initramfs.cpio.gz:/opt/initramfs.cpio.gz
+      - ./run.sh:/opt/run.sh
+      - ./run.py:/opt/run.py

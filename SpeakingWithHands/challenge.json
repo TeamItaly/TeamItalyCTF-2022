@@ -1,0 +1,34 @@
+{
+  "title": "Speaking with hands",
+  "description": "If you wanna stay in Italy, you'll need this powerful translator.\nUnfortunately it's not free, but I guess it won't be a problem for you, right?\n\ntranslator sha1sum: `ba65064ffb9622d72eca9ab198feef5623bc1ff4`\n\nAuthor: @Matte23",
+  "authors": [
+    "Matteo Schiff (Matte23)"
+  ],
+  "tags": [
+    "rev"
+  ],
+  "hiddenTags": [],
+  "files": [
+    {
+      "name": "translator",
+      "type": "upload",
+      "path": "./attachments/translator"
+    }
+  ],
+  "flags": [
+    "^flag\\{C0n92H4nd5!9376\\}$"
+  ],
+  "checker": {
+    "enabled": false,
+    "config": {
+      "timeout": -1
+    }
+  },
+  "hints": [],
+  "scoring": {
+    "type": "dynamic",
+    "stop": 50,
+    "start": 500,
+    "decay": 0.2
+  }
+}
