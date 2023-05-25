@@ -2,8 +2,8 @@ bits 64
 L33T_CODE:
 
 ; code unpacker
-; rsi contains license_ptr
-; rdi contains lib_functions
+; rdi contains license_ptr
+; rsi contains lib_functions
 ; rdx contains "function" offset
 ; rcx contains "function" size
 push rbp
